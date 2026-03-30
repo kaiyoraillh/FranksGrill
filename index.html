@@ -201,6 +201,7 @@
       margin-bottom: 2.5rem;
     }
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2.25rem; }
+    .hero-mobile-img { display: none; }
 
     .btn {
       display: inline-block;
@@ -630,6 +631,14 @@
       .hero-img-wrap { display: none; }
       .hero-content { margin-top: 2rem; display: flex; flex-direction: column; align-items: center; }
       .hero-content > div { display: flex; flex-direction: column; align-items: center; }
+      .hero { min-height: 100svh; padding-bottom: 2rem; }
+      .hero-mobile-img {
+        display: block;
+        width: 75%;
+        margin: 1.5rem auto 0;
+        border-radius: 12px;
+        object-fit: cover;
+      }
 
       .section-menu, .section-about, .section-locations { padding: 4rem 1.75rem; }
       .menu-grid { grid-template-columns: 1fr; gap: 3rem; }
@@ -699,6 +708,7 @@
         <a href="#menu" class="btn btn-pink">Ver menú</a>
         <a href="#locales" class="btn btn-ghost">Hacer pedido</a>
       </div>
+      <img class="hero-mobile-img" src="assets/imagenes%20franks/burga2.jpg" alt="Burger Frank's Grill">
     </div>
     <div class="hero-img-wrap">
       <img src="assets/imagenes%20franks/burga%20y%20papas3.jpg" alt="Burgers de Frank's Grill">
